@@ -1,0 +1,366 @@
+/* Css Reset可以清空一切初始格式 */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*:before,*:after{  /* 讓全部的標籤不會因為padding、margin、border的寬、高所影響 */
+    box-sizing: border-box;
+}
+
+/* 大外框 */
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+/* fb、twitter連結 */
+.client-Officialwebsite{
+    margin-top: 20px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.client-Officialwebsite .img-fb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(199, 197, 197);  
+    width: 90px;   
+}
+.client-Officialwebsite .fb{
+    display: block;    
+    color: #4460a0;
+    text-decoration: none; 
+    text-align: center;
+}
+.client-Officialwebsite .fb:hover{
+    color: red;
+}
+.client-Officialwebsite .img-twitter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; 
+}
+.client-Officialwebsite .twitter{
+    display: block;    
+    color: #00aaec;
+    text-decoration: none;
+    text-align: center;
+}
+.client-Officialwebsite .twitter:hover{
+    color: red;
+}
+/* 表頭菜單 */
+.client-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.client-menu .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.menu > li > a{
+    display: block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #00cc99;
+    text-decoration: none;
+}
+.menu > li > a:hover{
+    border-bottom: 5px solid #00cc99;
+}
+.menu .productdescription-open{
+    position: absolute;
+    display: none;
+    z-index: 999999;
+}
+.menu .productdescription-open a{
+    display: block;
+    width: 120px;
+    height: 50px;
+    color: #00cc99;
+    text-decoration: none;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
+.menu .productdescription-open a:hover{
+    background-color: #00cc99;
+    color: #fff;
+}
+
+.coursetitle{
+    width: 1000px;
+    height: 346px;
+    background-image: url("../images/banner.png");
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.coursetitle-h1{
+    width: 1000px;
+    height: 163px;
+    background: -webkit-linear-gradient(left,rgb(27, 27, 27),rgba(161, 159, 159,0.1));
+    padding: 20px;
+}
+.coursetitle-h1 h2{
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.5;
+}
+.swiper {
+    width: 1000px;
+    height: 346px;
+}
+.swiper-slide img{
+    width: 1000px;
+    height: 346px;
+}
+
+.coursemenu{
+    width: 1000px;
+    margin-bottom: 20px;
+}
+
+.course > ul{
+    display: flex;
+    justify-content: space-around;
+}
+.course .item1{    
+    width: 303px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.5;
+    border-bottom: 1px solid rgb(207, 203, 203);
+    border-left: 1px solid rgb(207, 203, 203);
+    border-right: 1px solid rgb(207, 203, 203);
+    box-shadow: 0px 1px 15px rgb(207, 203, 203);
+}
+.course .item1 h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight:600;
+}
+
+.course .item3{
+    width: 303px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.5;
+    border-bottom: 1px solid rgb(207, 203, 203);
+    border-left: 1px solid rgb(207, 203, 203);
+    border-right: 1px solid rgb(207, 203, 203);
+    box-shadow: 0px 1px 15px rgb(207, 203, 203);
+}
+.course .item3 h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight:600;    
+}
+.item3 .item3-ul ul{
+    width: 303px;
+    text-align: left;
+    margin-left: 20px;
+}
+.item3-ul li{
+    list-style-type: disc;
+    list-style-position: inside;
+    text-indent: 0.5em;
+}
+.course2{
+    margin: 0 auto;
+    width: 1000px;
+    margin-top: 20px;    
+    margin-bottom: 20px;
+}
+.course2 ul{
+    display: flex;
+    justify-content: space-around;
+}
+.course2 h2{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.course2 a{
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.course2 .html a{
+    background-image: url("../images/html.png");
+    width: 121px;
+    height: 139px;
+}
+.course2 .rwd a{
+    background-image: url("../images/rwd.png");
+    width: 227px;
+    height: 88px;
+}
+.course2 .jquery a{
+    background-image: url("../images/jQuery.png");
+    width: 114px;
+    height: 118px;
+}
+
+
+.coursecompare{
+    width: 1000px;
+    margin-bottom: 20px;
+}
+.coursecompare h3{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.tab{
+    width: 842px;
+    margin: 0 auto;
+}
+.tab th{
+    border-top: 1px solid rgb(207, 203, 203);
+    border-bottom: 1px solid rgb(207, 203, 203);
+    padding: 10px;
+    width: 500px;
+    text-align: left;
+    font-weight: bold;
+    background-color: rgb(219, 214, 214);
+}
+.tab td{
+    border-bottom: 1px solid rgb(207, 203, 203);
+    padding: 10px;
+    width: 500px;
+    text-align: left;
+}
+.tab .textgreen{
+    color: #00cc99;
+}
+.coursesignup{
+    background:-webkit-linear-gradient(#00654c,#009570);
+    width: 1000px;
+    height: 400px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.coursesignup h2{
+    font-size: 27px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.signupmaterial{
+    display: flex;
+}
+.signupmaterial-text .text-1{    
+    width: 463px;
+    height: 249px;
+    margin-right: 50px;
+}
+.customerinformation label{
+    margin-bottom: 10px;
+    color: #fff;
+}
+.customerinformation input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 462px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+.customerinformation .but{
+    display: flex;
+    justify-content: flex-end;
+}
+.customerinformation .but1{    
+    background-color: #33e0b5;
+    border: 1px solid #33e0b5;
+    color: #fff;
+    cursor: pointer; /* 可以讓滑鼠變圖案 */
+    width: 71px;
+}
+.customerinformation .but1:hover{
+    border: 2px solid black;
+}
+.top{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.footer .companyinformation{
+    line-height: 1.5;
+}
+.companyinformation a{
+    text-decoration: none;
+}
+.companyinformation span{
+    color: #e12d80;
+}
+
